@@ -1,0 +1,29 @@
+{
+    "name": "tmc/bad-request-bundle",
+    "type": "symfony-bundle",
+    "description": "A Symfony2 Request Validator Bundle",
+    "keywords": ["bundle", "Symfony2", "form", "validator", "request", "annotation"],
+    "homepage": "https://github.com/titomiguelcosta",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tito Miguel Costa",
+            "email": "symfony@titomiguelcosta.com",
+            "homepage": "http://www.titomiguelcosta.com/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.3,<2.5-dev"
+    },
+    "autoload": {
+        "psr-0": { "Tmc\\BadRequestBundle": "" }
+    },
+    "target-dir": "Tmc/BadRequestBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.*-dev"
+        }
+    }
+}
