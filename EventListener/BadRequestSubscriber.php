@@ -28,7 +28,7 @@ class BadRequestSubscriber implements EventSubscriberInterface
     {
         return array(
             'kernel.controller' => array(
-                array('onKernelController', 10)
+                array('onKernelController', -255)
             )
         );
     }

@@ -12,6 +12,7 @@ Instalation
 
 * Enable the bundle in AppKernel.php
 
+```php
 public function registerBundles()
 {
     $bundles = array(
@@ -19,6 +20,7 @@ public function registerBundles()
         new Tmc\BadRequestBundle\TmcBadRequestBundle(),
     );
 }
+```
 
 Description
 -----------
@@ -31,6 +33,8 @@ In the following example, the options in ModelType have a data_class that points
 
 Example
 -------
+
+```php
 use Tmc\BadRequestBundle\Annotation\BadRequest;
 
 class DefaultController extends Controller
@@ -46,6 +50,7 @@ class DefaultController extends Controller
     }
 
 }
+```
 
 Bad Request Types
 -----------------
@@ -58,6 +63,7 @@ Almost for sure you will want to disable the csrf protection, if so, add the opt
 
 An example:
 
+```php
 namespace Tmc\DemoBundle\Type;
 
 use Symfony\Component\Form\AbstractType;
@@ -87,3 +93,4 @@ class PersonType extends AbstractType
     }
 
 }
+```
