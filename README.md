@@ -8,7 +8,7 @@ Instalation
 
 * In composer.json add the package to the require section:
 
-"tmc/bad-request-bundle": "dev-master"
+"zorbus/bad-request-bundle": "dev-master"
 
 * Enable the bundle in AppKernel.php
 
@@ -17,7 +17,7 @@ public function registerBundles()
 {
     $bundles = array(
         ...,
-        new Tmc\BadRequestBundle\TmcBadRequestBundle(),
+        new Zorbus\BadRequestBundle\ZorbusBadRequestBundle(),
     );
 }
 ```
@@ -35,7 +35,7 @@ Example
 -------
 
 ```php
-use Tmc\BadRequestBundle\Annotation\BadRequest;
+use Zorbus\BadRequestBundle\Annotation\BadRequest;
 
 class DefaultController extends Controller
 {
@@ -46,7 +46,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Model $model)
     {
-        return $this->render('TmcDemoBundle:Default:index.html.twig', array('model' => $model));
+        return $this->render('ZorbusDemoBundle:Default:index.html.twig', array('model' => $model));
     }
 
 }
@@ -64,7 +64,7 @@ Almost for sure you will want to disable the csrf protection, if so, add the opt
 An example:
 
 ```php
-namespace Tmc\DemoBundle\Type;
+namespace Zorbus\DemoBundle\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -81,7 +81,7 @@ class PersonType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Tmc\DemoBundle\Model\Person',
+            'data_class' => 'Zorbus\DemoBundle\Model\Person',
             'csrf_protection' => false,
             'method' => 'GET'
         ));

@@ -1,9 +1,9 @@
 <?php
 
-namespace Tmc\BadRequestBundle\Annotation;
+namespace Zorbus\BadRequestBundle\Annotation;
 
 use Symfony\Component\Form\AbstractType;
-use Tmc\BadRequestBundle\Exception\BadModelException;
+use Zorbus\BadRequestBundle\Exception\BadModelException;
 
 /**
  * @Annotation

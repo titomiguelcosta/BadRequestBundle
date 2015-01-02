@@ -1,12 +1,11 @@
 parameters:
-    tmc_bad_request.event_subscriber.bad_request.class: Tmc\BadRequestBundle\EventListener\BadRequestSubscriber
+    zobus_bad_request.event_subscriber.bad_request.class: Zorbus\BadRequestBundle\EventListener\BadRequestSubscriber
 
 services:
-    tmc_bad_request.event_subscriber.bad_request:
-        class: %tmc_bad_request.event_subscriber.bad_request.class%
+    zorbus_bad_request.event_subscriber.bad_request:
+        class: %zorbus_bad_request.event_subscriber.bad_request.class%
         arguments:
             - @annotation_reader
             - @form.factory
         tags:
             - { name: kernel.event_subscriber }
-

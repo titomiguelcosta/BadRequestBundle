@@ -1,6 +1,6 @@
 <?php
 
-namespace Tmc\BadRequestBundle\Exception;
+namespace Zorbus\BadRequestBundle\Exception;
 
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 

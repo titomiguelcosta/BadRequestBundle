@@ -1,13 +1,13 @@
 <?php
 
-namespace Tmc\BadRequestBundle\EventListener;
+namespace Zorbus\BadRequestBundle\EventListener;
 
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 use Doctrine\Common\Annotations\FileCacheReader;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Form\FormFactory;
-use Tmc\BadRequestBundle\Annotation\BadRequest as BadRequestAnnotation;
-use Tmc\BadRequestBundle\Exception\BadRequestException;
+use Zorbus\BadRequestBundle\Annotation\BadRequest as BadRequestAnnotation;
+use Zorbus\BadRequestBundle\Exception\BadRequestException;
 use ReflectionMethod;
 use ReflectionFunction;
 use ReflectionClass;
